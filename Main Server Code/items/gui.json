@@ -1,0 +1,39 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "Improved:gui",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:foil": false,
+			"minecraft:icon": {
+				"texture": "improved_gui"
+			},
+			"minecraft:display_name": {
+				"value": "§l§dSkyblock§bUI\n§r§cRight Click"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "origin:open"
+				}
+			},
+			"minecraft:should_despawn": true,
+			"minecraft:allow_off_hand": true
+		},
+		"events": {
+			"origin:open": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"summon origin:npcdummy ~~~ origin:open"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

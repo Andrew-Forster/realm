@@ -1,0 +1,548 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "page0",
+				"npc_name": { "rawtext": [ {"text":"§l§bWelcome to §dSpcae Skyblock!§r"} ] },
+				"text": { "rawtext": [ {"text":"§cThis is you personal tool for Warping, Settings, and information! This can't be removed from you inventory."} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§9Warps§r"} ] },
+						"commands": [
+							"/dialogue open @s @initiator warp0",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§f§lSettings§r"} ] },
+						"commands": [
+							"/dialogue open @s @initiator settings0",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§aHelp & Info§r"} ] },
+						"commands": [
+							"/dialogue open @s @initiator help0",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§bManage Island"} ] },
+						"commands": [
+							"/dialogue open @s @initiator island0",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§dQuests"} ] },
+						"commands": [
+							"/dialogue open @s @initiator quest0",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§6§l§r"} ] },
+						"commands": [
+							"/dialogue open @s @initiator "
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "help0",
+				"npc_name": { "rawtext": [ {"text":"§l§aHelp & §eInfo"} ] },
+				"text": { "rawtext": [ {"text":"§fWelcome to the Infohub! Take a look around!§r"} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§cBack"} ] },
+						"commands": [
+							"/dialogue open @s @initiator page0",
+							"/execute @initiator ~~~ playsound note.didgeridoo"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "warp0",
+				"npc_name": { "rawtext": [ {"text":"§l§dWarps"} ] },
+				"text": { "rawtext": [ {"text":"§l§aClick to TP§r"} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§9Spawn§r"} ] },
+						"commands": [
+							"/tag @initiator add backhub",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§aShop§r"} ] },
+						"commands": [
+							"/tag @initiator add shop",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§dCrates§r"} ] },
+						"commands": [
+							"/tag @initiator add crates",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§2Wilderness§r"} ] },
+						"commands": [
+							"/tag @initiator add wild",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§c§lBack"} ] },
+						"commands": [
+							"/dialogue open @s @initiator page0",
+							"/execute @initiator ~~~ playsound note.didgeridoo"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "settings0",
+				"npc_name": { "rawtext": [ {"text":"§l§fSettings§r"} ] },
+				"text": { "rawtext": [ {"text":"§aMore settings coming soon!"} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§fVision"} ] },
+						"commands": [
+							"/dialogue open @s @initiator night"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§cBack"} ] },
+						"commands": [
+							"/dialogue open @s @initiator page0",
+							"/execute @initiator ~~~ playsound note.didgeridoo"
+						]
+					}
+				]
+			},
+
+			{
+				"scene_tag": "quest0",
+				"npc_name": { "rawtext": [ {"text":"§l§dQuests"} ] },
+				"text": { "rawtext": [ {"text":"§cMore Quests Soon!"} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§bDiamond"} ] },
+						"commands": [
+							"/dialogue open @s @initiator diamond0",
+							"/execute @initiator ~~~ playsound note.bit"
+						]	
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§aEmerald"} ] },
+						"commands": [
+							"/dialogue open @s @initiator emerald0",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§8Netherite"} ] },
+						"commands": [
+							"/dialogue open @s @initiator netherite0",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fNether Star"} ] },
+						"commands": [
+							"/dialogue open @s @initiator star0",
+							"/execute @initiator ~~~ playsound note.bit"
+						]
+					},{
+						"name": { "rawtext": [ {"text":"§l§d???§r"} ] },
+						"commands": [
+							"/dialogue open @s @initiator page 3",
+							"/execute @initiator ~~~ playsound note.bit",
+							"/execute @initiator ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§l§dComing Soon!\"}]}"
+						]
+						
+					},
+					{
+						"name": { "rawtext": [ {"text":"§cBack"} ] },
+						"commands": [
+							"/dialogue open @s @initiator page0",
+							"/execute @initiator ~~~ playsound note.didgeridoo"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "diamond0",
+				"npc_name": { "rawtext": [ {"text":"§l§bDiamond Quest"} ] },
+				"text": { "rawtext": [ {"text":"§l"} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§aView Progress"} ] },
+						"commands": [
+							"/execute @initiator ~~~ scoreboard players add @s diamondq 0",
+							"/execute @initiator ~~~ tellraw @s[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..9}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §c╏╏╏╏╏ §a- §b50\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=10..19}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏§c╏╏╏╏ §a- §b50\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=20..29}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏§c╏╏╏ §a- §b50\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=30..39}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏§c╏╏ §a- §b50\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=40..49}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏╏§c╏ §a- §b50\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..19}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §c╏╏╏╏╏ §a- §b100\n§6Level 1\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=20..39}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏§c╏╏╏╏ §a- §b100\n§6Level 1\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=40..59}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏§c╏╏╏ §a- §b100\n§6Level 1\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=60..79}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏§c╏╏ §a- §b100\n§6Level 1\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=80..99}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏╏§c╏ §a- §b100\n§6Level 1\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..29}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §c╏╏╏╏╏ §a- §b150\n§6Level 2\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=30..59}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏§c╏╏╏╏ §a- §b150\n§6Level 2\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=60..89}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏§c╏╏╏ §a- §b150\n§6Level 2\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=90..119}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏§c╏╏ §a- §b150\n§6Level 2\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=120..149}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏╏§c╏ §a- §b150\n§6Level 2\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..39}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §c╏╏╏╏╏ §a- §b200\n§3Level 3\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=40..79}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏§c╏╏╏╏ §a- §b200\n§3Level 3\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=80..119}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏§c╏╏╏ §a- §b200\n§3Level 3\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=120..159}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏§c╏╏ §a- §b200\n§3Level 3\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=160..199}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏╏§c╏ §a- §b200\n§3Level 3\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=0..99}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §c╏╏╏╏╏ §a- §b500\n§3Level 4\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=100..199}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏§c╏╏╏╏ §a- §b500\n§3Level 4\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=200..299}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏§c╏╏╏ §a- §b500\n§3Level 4\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=300..399}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏§c╏╏ §a- §b500\n§3Level 4\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=400..499}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏╏§c╏ §a- §b500\n§3Level 4\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,scores={diamondq=0..199}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §c╏╏╏╏╏╏ §a- §b1,000\n§dLevel 5\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest5,scores={diamondq=200..399}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏§c╏╏╏╏ §a- §b1,000\n§dLevel 5\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest5,scores={diamondq=400..599}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏§c╏╏╏ §a- §b1,000\n§dLevel 5\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest5,scores={diamondq=600..799}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏§c╏╏ §a- §b1,000\n§dLevel 5\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest5,scores={diamondq=800..999}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §a╏╏╏╏§c╏ §a- §b1,000\n§dLevel 5\n§1--------------------\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest5,scores={diamondq=1000..}] {\"rawtext\":[{\"text\":\"§r§l§1--------------------\n§bDiamond Quest\n§aProgress - §e╏╏╏╏╏ §a- \n§eComplete\n§1--------------------\"}]}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§6Add Progress§r"} ] },
+						"commands": [
+							"/dialogue open @s @initiator diamond1",
+							"/execute @initiator ~~~ playsound note.bit"
+							
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§eRewards"} ] },
+						"commands": [
+							"/dialogue open @s @initiator rewards"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§cBack"} ] },
+						"commands": [
+							"/dialogue open @s @initiator quest0",
+							"/execute @initiator ~~~ playsound note.didgeridoo"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "diamond1",
+				"npc_name": { "rawtext": [ {"text":"§l§6Add Progress§r"} ] },
+				"text": { "rawtext": [ {"text":"§bYou are adding progress to you diamond quest! §cNote, once you get close to finishing a level you may have to switch to adding a lower amount of §bdiamond/s§c at a time"} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§aAdd §b1"} ] },
+						"commands": [
+			
+							"/execute @initiator[hasitem={item=diamond,quantity=0},scores={diamondq=!1000..}] ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§l§cYou do not have any §bDiamonds§r\"}]}",
+							"/execute @initiator[hasitem={item=diamond,quantity=0}] ~~~ playsound note.bass ",
+							"/execute @initiator[scores={diamondq=1000..}] ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§l§eYou have fully completed this quest!§r\"}]}",
+							"/execute @initiator[hasitem={item=diamond,quantity=1..},scores={diamondq=!1000..}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[hasitem={item=diamond,quantity=1..},scores={diamondq=!1000..}] ~~~ clear @s diamond 0 1",
+							"/execute @initiator[tag=hasDiamonds,scores={diamondq=!1000..}] ~~~ scoreboard players add @s diamondq 1",
+							
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,scores={diamondq=999},tag=hasDiamonds] {\"rawtext\":[{\"text\":\"§r§l§gYou Have COMPLETED Your §bDiamond §gQuest To §dMAX\"}]}",
+							"/execute @initiator[scores={diamondq=999}] ~~~ playsound note.chime",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,tag=hasDiamonds,scores={diamondq=0..999}] diamond1",
+							"/execute @initiator[scores={diamondq=999}] ~~~ tag @s add dquestredeem",
+							"/execute @initiator[scores={diamondq=999}] ~~~ tag @s add dquest",
+							"/execute @initiator[scores={diamondq=!0},tag=hasDiamonds] ~~~ playsound note.bit ",
+
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=499..},tag=hasDiamonds] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §dLevel 5!\"}]}",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=499..},tag=hasDiamonds] ~~~ playsound random.levelup",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=0..499}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=499..},tag=hasDiamonds] ~~~ tag @s add dquest5redeem",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=499..},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,tag=dquest5redeem,tag=hasDiamonds] ~~~ tag @s add dquest5",
+							
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=199..},tag=hasDiamonds] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §3Level 4!\"}]}",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=199..},tag=hasDiamonds] ~~~ playsound random.levelup",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=0..199}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=199..},tag=hasDiamonds] ~~~ tag @s add dquest4redeem",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=199..},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,tag=dquest4redeem,tag=hasDiamonds] ~~~ tag @s add dquest4",
+							
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=149..},tag=hasDiamonds] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §3Level 3!\"}]}",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=149..},tag=hasDiamonds] ~~~ playsound random.levelup",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=0..149}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=149..},tag=hasDiamonds] ~~~ tag @s add dquest3redeem",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=149..},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=dquest3redeem,tag=hasDiamonds] ~~~ tag @s add dquest3",
+						
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=99..},tag=hasDiamonds] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §6Level 2!\"}]}",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=99..},tag=hasDiamonds] ~~~ playsound random.levelup",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=99..},tag=hasDiamonds] ~~~ tag @s add dquest2redeem",
+							"/dialogue open @s @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=0..99}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=99..},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=dquest2redeem,tag=hasDiamonds] ~~~ tag @s add dquest2",
+
+							"/execute @initiator ~~~ tellraw @s[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=49..},tag=hasDiamonds] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §6Level 1!\"}]}",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=49..},tag=hasDiamonds] ~~~ playsound random.levelup",
+							"/dialogue open @s @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=0..49}] diamond1",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=49..},tag=hasDiamonds] ~~~ tag @s add dquest1redeem",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=49..},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=dquest1redeem,tag=hasDiamonds] ~~~ tag @s add dquest1",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds"
+
+
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§aAdd §b10"} ] },
+						"commands": [
+	
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,scores={diamondq=990},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§gYou Have COMPLETED Your §bDiamond §gQuest To §dMAX\"}]}",
+							"/execute @initiator ~~~ tellraw @s[scores={diamondq=991..},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity, §aYou are approaching the next level!§r\"}]}",
+							"/execute @initiator[scores={diamondq=991..},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bass",
+							"/execute @initiator[scores={diamondq=990},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.chime",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,scores={diamondq=0..989},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bit ",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..989}] diamond1",
+							"/execute @initiator[scores={diamondq=990},hasitem={item=diamond,quantity=10..}] ~~~ tag @s add dquestredeem",
+							"/execute @initiator[scores={diamondq=990},hasitem={item=diamond,quantity=10..}] ~~~ tag @s add dquest",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..990}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..990}] ~~~ clear @s diamond 0 10",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,tag=hasDiamonds,scores={diamondq=0..990}] ~~~ scoreboard players add @s diamondq 10",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds",
+
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=490},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §dLevel 5!\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=491..},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity, §aYou are approaching the next level!§r\"}]}",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=491..},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bass",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=490},hasitem={item=diamond,quantity=10..}] ~~~ playsound random.levelup",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=0..489},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bit ",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..489}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=490},hasitem={item=diamond,quantity=10..}] ~~~ tag @s add dquest5redeem",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..490}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..490}] ~~~ clear @s diamond 0 10",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=0..490}] ~~~ scoreboard players add @s diamondq 10",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=500},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,tag=dquest5redeem,tag=hasDiamonds] ~~~ tag @s add dquest5",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds",
+
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=190},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §3Level 4!\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=191..},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity, §aYou are approaching the next level!\"}]}",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=191..},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bass",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=190},hasitem={item=diamond,quantity=10..}] ~~~ playsound random.levelup",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..189},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bit ",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..189}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=190},hasitem={item=diamond,quantity=10..}] ~~~ tag @s add dquest4redeem",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..190}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..40}] ~~~ clear @s diamond 0 10",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=0..190}] ~~~ scoreboard players add @s diamondq 10",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=200},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,tag=dquest4redeem,tag=hasDiamonds] ~~~ tag @s add dquest4",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds",
+							
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=140},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §3Level 3!\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=141..},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity, §aYou are approaching the next level!\"}]}",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=141..},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bass",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=140},hasitem={item=diamond,quantity=10..}] ~~~ playsound random.levelup",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..139},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bit ",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=140},hasitem={item=diamond,quantity=10..}] ~~~ tag @s add dquest3redeem",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..139}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..140}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..140}] ~~~ clear @s diamond 0 10",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=0..140}] ~~~ scoreboard players add @s diamondq 10",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=150},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=dquest3redeem,tag=hasDiamonds] ~~~ tag @s add dquest3",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds",
+
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=90},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §6Level 2!\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=91..},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity, §aYou are approaching the next level!§r\"}]}",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=91..},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bass", 
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=90},hasitem={item=diamond,quantity=10..}] ~~~ playsound random.levelup",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..89},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bit ",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=90},hasitem={item=diamond,quantity=10..}] ~~~ tag @s add dquest2redeem",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..90}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..90}] ~~~ clear @s diamond 0 10",
+							"/dialogue open @s @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=0..89}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=0..90}] ~~~ scoreboard players add @s diamondq 10",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=100},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,tag=dquest2redeem] ~~~ tag @s add dquest2",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds",
+
+							"/execute @initiator[hasitem={item=diamond,quantity=0..9}] ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§l§cYou do not have enough §bDiamonds§r\"}]}",
+							"/execute @initiator[hasitem={item=diamond,quantity=0..9}] ~~~ playsound note.bass ",
+							"/execute @initiator[scores={diamondq=1000..}] ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§l§eYou have fully completed this quest!§r\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=40},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §6Level 1!\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=41..},hasitem={item=diamond,quantity=10..}] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity, §aYou are approaching the next level!\"}]}",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=41..},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bass",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=40},hasitem={item=diamond,quantity=10..}] ~~~ playsound random.levelup",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..39},hasitem={item=diamond,quantity=10..}] ~~~ playsound note.bit ",
+							"/dialogue open @s @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..39}] diamond1",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..40}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=10..},scores={diamondq=0..40}] ~~~ clear @s diamond 0 10",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=40}] ~~~ tag @s add dquest1redeem",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=0..40}] ~~~ scoreboard players add @s diamondq 10",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,scores={diamondq=50}] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=!dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,tag=dquest1redeem] ~~~ tag @s add dquest1",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds"
+							
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§aAdd §b100"} ] },
+						"commands": [
+							"/execute @initiator[hasitem={item=diamond,quantity=0..99}] ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§l§cYou do not have enough §bDiamonds§r\"}]}",
+							"/execute @initiator[hasitem={item=diamond,quantity=0..99}] ~~~ playsound note.bass ",
+							"/execute @initiator[scores={diamondq=1000..}] ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§l§eYou have fully completed this quest!§r\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=!dquest1,tag=!dquest2,tag=!dquest3,hasitem={item=diamond,quantity=100..},tag=!dquest4,tag=!dquest5] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity for This Level!\"}]}",
+
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=900}] {\"rawtext\":[{\"text\":\"§r§l§gYou Have COMPLETED Your §bDiamond §gQuest To §dMAX\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=901..}] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity, §aYou are approaching the next level!§r\"}]}",
+							"/execute @initiator[hasitem={item=diamond,quantity=100..},scores={diamondq=901..}] ~~~ playsound note.bass",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,scores={diamondq=0..899},hasitem={item=diamond,quantity=100..}] ~~~ playsound note.bit ",
+							"/execute @initiator[hasitem={item=diamond,quantity=100..},scores={diamondq=900}] ~~~ playsound note.chime",
+							"/execute @initiator[hasitem={item=diamond,quantity=100..},scores={diamondq=900}] ~~~ tag @s add dquestredeem",
+							"/execute @initiator[hasitem={item=diamond,quantity=100..},scores={diamondq=900}] ~~~ tag @s add dquest",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0..899}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0..900}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,scores={diamondq=0..900},hasitem={item=diamond,quantity=100..}] ~~~ clear @s diamond 0 100",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,scores={diamondq=0..900},tag=hasDiamonds] ~~~ scoreboard players add @s diamondq 100",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds",
+
+							"/execute @initiator ~~~ tellraw @s[tag=!dquest5,tag=dquest2,tag=dquest3,tag=dquest4,hasitem={item=diamond,quantity=100..},scores={diamondq=400}] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §dLevel 5!\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=!dquest5,tag=dquest2,tag=dquest3,tag=dquest4,hasitem={item=diamond,quantity=100..},scores={diamondq=401..}] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity, §aYou are approaching the next level!§r\"}]}",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=401..},hasitem={item=diamond,quantity=100..}] ~~~ playsound note.bass",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=400},hasitem={item=diamond,quantity=100..}] ~~~ playsound random.levelup",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=0..399},hasitem={item=diamond,quantity=100..}] ~~~ playsound note.bit ",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0..399}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=400},hasitem={item=diamond,quantity=100..}] ~~~ tag @s add dquest5redeem",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0..400}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=0..400},hasitem={item=diamond,quantity=100..}] ~~~ clear @s diamond 0 100",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=0..400},tag=hasDiamonds] ~~~ scoreboard players add @s diamondq 100",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,scores={diamondq=500},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=!dquest5,tag=dquest5redeem,tag=hasDiamonds] ~~~ tag @s add dquest5",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds",
+							
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=100}] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §3Level 4!\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=101..}] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity, §aYou are approaching the next level!§r\"}]}",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=101..}] ~~~ playsound note.bass",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=100}] ~~~ playsound random.levelup",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..99},hasitem={item=diamond,quantity=100..}] ~~~ playsound note.bit ",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=dquest4,tag=dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0.99}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=100}] ~~~ tag @s add dquest4redeem",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0..100}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..100},hasitem={item=diamond,quantity=100..}] ~~~ clear @s diamond 0 100",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..100},tag=hasDiamonds] ~~~ scoreboard players add @s diamondq 100",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=200},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,tag=dquest4redeem] ~~~ tag @s add dquest4",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds",
+							
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,hasitem={item=diamond,quantity=100..},tag=!dquest5,scores={diamondq=50}] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §3Level 3!\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,hasitem={item=diamond,quantity=100..},tag=!dquest5,scores={diamondq=51..}] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity, §aYou are approaching the next level!§r\"}]}",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=51..}] ~~~ playsound note.bass",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=50}] ~~~ playsound random.levelup",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..49},hasitem={item=diamond,quantity=100..}] ~~~ playsound note.bit ",
+							"/dialogue open @s @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0..49}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=50}] ~~~ tag @s add dquest3redeem",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0..50}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..50},hasitem={item=diamond,quantity=100..}] ~~~ clear @s diamond 0 100",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0..50},tag=hasDiamonds] ~~~ scoreboard players add @s diamondq 100",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=150},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,tag=dquest3redeem] ~~~ tag @s add dquest3",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds",
+
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,hasitem={item=diamond,quantity=100..},tag=!dquest5,scores={diamondq=0}] {\"rawtext\":[{\"text\":\"§r§l§aYou Leveled Your §bDiamond §aQuest To §6Level 2!\"}]}",
+							"/execute @initiator ~~~ tellraw @s[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,hasitem={item=diamond,quantity=100..},tag=!dquest5,scores={diamondq=1..}] {\"rawtext\":[{\"text\":\"§r§l§cPlease Use a Lower Quanity, §aYou are approaching the next level!§r\"}]}",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=1..}] ~~~ playsound note.bass",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0}] ~~~ playsound random.levelup",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0},hasitem={item=diamond,quantity=100..}] ~~~ playsound note.bit ",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0}] ~~~ tag @s add dquest2redeem",
+							"/dialogue open @s @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0}] diamond1",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,hasitem={item=diamond,quantity=100..},scores={diamondq=0}] ~~~ tag @s add hasDiamonds",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0},tag=hasDiamonds] ~~~ clear @s diamond 0 100",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=0},tag=hasDiamonds] ~~~ scoreboard players add @s diamondq 100",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,scores={diamondq=100},tag=hasDiamonds] ~~~ scoreboard players set @s diamondq 0",
+							"/execute @initiator[tag=dquest1,tag=!dquest2,tag=!dquest3,tag=!dquest4,tag=!dquest5,tag=hasDiamonds,tag=dquest2redeem] ~~~ tag @s add dquest2",
+							"/execute @initiator ~~~ tag @s remove hasDiamonds"
+
+
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§cBack"} ] },
+						"commands": [
+							"/dialogue open @s @initiator diamond0",
+							"/execute @initiator ~~~ playsound note.didgeridoo"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "night",
+				"npc_name": { "rawtext": [ {"text":"§l§9Full Bright"} ] },
+				"text": { "rawtext": [ {"text":"§fIncreases visablity in dark places"} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§2Add Time §c(15m)"} ] },
+						"commands": [
+							"/execute @initiator ~~~ function vision/on",
+							"/execute @initiator ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§aFull Bright is active for §c15 minutes\"}]}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§4OFF"} ] },
+						"commands": [
+							"/execute @initiator ~~~ function vision/off",
+							"/execute @initiator ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§cFull Bright §4OFF\"}]}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§cBack"} ] },
+						"commands": [
+							"/dialogue open @s @initiator settings0",
+							"/execute @initiator ~~~ playsound note.didgeridoo"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "hunger",
+				"npc_name": { "rawtext": [ {"text":"§l§2No Hunger"} ] },
+				"text": { "rawtext": [ {"text":"§fToggleable hunger, Only for §6Rank 5"} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§2ON"} ] },
+						"commands": [
+							"/execute @initiator ~~~ function hunger/on",
+							"/execute @initiator ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§3No Hunger §2ON\"}]}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§4OFF"} ] },
+						"commands": [
+							"/execute @initiator ~~~ function hunger/off",
+							"/execute @initiator ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§3No hunger §4OFF\"}]}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§cBack"} ] },
+						"commands": [
+							"/dialogue open @s @initiator settings0",
+							"/execute @initiator ~~~ playsound note.didgeridoo"
+						]
+					}
+				]
+			}
+		]
+	}
+}

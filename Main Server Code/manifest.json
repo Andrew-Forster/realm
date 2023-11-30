@@ -1,0 +1,43 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§eRunning in the background",
+    "name": "§l§bSpace §dSkyblock",
+    "uuid": "c2e7de84-7c42-4ee4-8ad9-821968274097",
+    "version": [
+      1,
+      0,
+      2
+    ],
+    "min_engine_version": [
+      1,
+      19,
+      81
+    ]
+  },
+  "modules": [
+    {
+        "description": "Scripting",
+        "type": "script",
+        "language": "javascript",
+        "uuid": "6c47218c-92ee-4eec-b8e4-fc0da8b41f74",
+        "version": [
+        1, 
+        2, 
+        0
+      ],
+        "entry": "scripts/main.js"
+    }
+],
+
+"dependencies": [
+  {
+    "module_name": "@minecraft/server",
+    "version": "1.2.0-beta"
+  },
+  {
+    "module_name": "@minecraft/server-gametest",
+    "version": "1.0.0-beta"
+  }
+]
+}
